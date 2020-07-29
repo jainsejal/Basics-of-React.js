@@ -5,13 +5,19 @@ import ReactDOM from "react-dom";
 const name = "Sejal Jain";
 const currentYear = new Date().getFullYear();
 const img = "https://picsum.photos/200";
+const customStyle = {
+  color : "blue",
+  fontSize : "16px",
+  border : "1px solid grey"
+}
+customStyle.color = "purple";
 
 //It should display a h1 heading.
 ReactDOM.render(
   <div>
-    <h1>Created by {name}!</h1>
+    <h1 style = {{color: "red"}}>Created by {name}!</h1>
     <h3> My favourite food items:</h3>
-    <ul>
+    <ul style ={customStyle}>
       <li> Pani Puri </li>
       <li> Noodles </li>
       <li> Pizza </li>
