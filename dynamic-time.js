@@ -23,8 +23,7 @@ if (time < 12) {
 
 ReactDOM.render(
   <h1 style={customStyle} className="heading">
-    {" "}
-    {greeting}{" "}
+    {greeting}
   </h1>,
   document.getElementById("root")
 );
